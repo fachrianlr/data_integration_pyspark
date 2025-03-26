@@ -19,7 +19,7 @@ os.environ["PATH"] += os.pathsep + os.path.join(HADOOP_PATH, "bin")
 # set spark session
 spark_session = get_spark_session("week6-warehouse-pipeline", POSTGRES_DRIVER_PATH)
 spark_session.conf.set("spark.sql.legacy.timeParserPolicy", "LEGACY")
-spark_session.conf.set("spark.sql.debug.maxToStringFields", 100)
+spark_session.conf.set("spark.sql.debug.maxToStringFields", "100")
 
 # Extract data from source
 education_status_df = extract_src_db(spark_session, "education_status")
