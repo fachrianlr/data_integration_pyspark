@@ -8,11 +8,11 @@ from src.config.variables import DWH_DB_URI_ALCHEMY, DWH_DB_URI, CONNECTION_PROP
 from src.log.etl_log import insert_etl_log
 
 
-def load_dwh_db(df: DataFrame, table_name: str, source: str):
+def load_dwh_db(df: DataFrame, table_name: str, step: str, source: str) -> None:
     logger.info(f"Loading dwh data to : {table_name}")
 
     log_msg = {
-        "step": "warehouse",
+        "step": step,
         "process": "load",
         "status": "-",
         "source": source,

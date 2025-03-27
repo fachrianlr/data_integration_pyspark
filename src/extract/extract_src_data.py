@@ -7,14 +7,14 @@ from src.config.variables import SRC_DB_URI, CONNECTION_PROPERTIES
 from src.log.etl_log import insert_etl_log
 
 
-def extract_src_db(spark: SparkSession, table_name: str) -> DataFrame:
+def extract_src_db(spark: SparkSession, table_name: str, step: str, source: str) -> DataFrame:
     logger.info(f"Extracting {table_name} from {SRC_DB_URI}")
 
     log_msg = {
-        "step": "warehouse",
+        "step": step,
         "process": "extraction",
         "status": "-",
-        "source": "database",
+        "source": source,
         "table_name": table_name,
         "error_msg": "-",
         "etl_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -39,14 +39,14 @@ def extract_src_db(spark: SparkSession, table_name: str) -> DataFrame:
         return df
 
 
-def extract_src_csv(spark: SparkSession, path_file: str, table_name: str) -> DataFrame:
+def extract_src_csv(spark: SparkSession, path_file: str, table_name: str, step: str, source: str) -> DataFrame:
     logger.info(f"Extracting data from csv file: {path_file}")
 
     log_msg = {
-        "step": "warehouse",
+        "step": step,
         "process": "extraction",
         "status": "-",
-        "source": "csv",
+        "source": source,
         "table_name": table_name,
         "error_msg": "-",
         "etl_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),

@@ -1,0 +1,128 @@
+{
+    "education_status": {
+        "basic_info": {
+            "num_rows": 4,
+            "num_columns": 4
+        },
+        "data_types": {
+            "education_id": "int",
+            "value": "string",
+            "created_at": "timestamp",
+            "updated_at": "timestamp"
+        },
+        "missing_values": {
+            "education_id": "0.00% missing values: 0/4",
+            "value": "0.00% missing values: 0/4",
+            "created_at": "0.00% missing values: 0/4",
+            "updated_at": "0.00% missing values: 0/4"
+        }
+    },
+    "marital_status": {
+        "basic_info": {
+            "num_rows": 3,
+            "num_columns": 4
+        },
+        "data_types": {
+            "marital_id": "int",
+            "value": "string",
+            "created_at": "timestamp",
+            "updated_at": "timestamp"
+        },
+        "missing_values": {
+            "marital_id": "0.00% missing values: 0/3",
+            "value": "0.00% missing values: 0/3",
+            "created_at": "0.00% missing values: 0/3",
+            "updated_at": "0.00% missing values: 0/3"
+        }
+    },
+    "marketing_campaign": {
+        "basic_info": {
+            "num_rows": 45211,
+            "num_columns": 20
+        },
+        "data_types": {
+            "loan_data_id": "int",
+            "age": "int",
+            "job": "string",
+            "marital_id": "int",
+            "education_id": "int",
+            "default": "boolean",
+            "balance": "string",
+            "housing": "boolean",
+            "loan": "boolean",
+            "contact": "string",
+            "day": "int",
+            "month": "string",
+            "duration": "int",
+            "campaign": "int",
+            "pdays": "int",
+            "previous": "int",
+            "poutcome": "string",
+            "subscribed_deposit": "boolean",
+            "created_at": "timestamp",
+            "updated_at": "timestamp"
+        },
+        "missing_values": {
+            "loan_data_id": "0.00% missing values: 0/45211",
+            "age": "0.00% missing values: 0/45211",
+            "job": "0.00% missing values: 0/45211",
+            "marital_id": "0.00% missing values: 0/45211",
+            "education_id": "0.00% missing values: 0/45211",
+            "default": "0.00% missing values: 0/45211",
+            "balance": "0.00% missing values: 0/45211",
+            "housing": "0.00% missing values: 0/45211",
+            "loan": "0.00% missing values: 0/45211",
+            "contact": "0.00% missing values: 0/45211",
+            "day": "0.00% missing values: 0/45211",
+            "month": "0.00% missing values: 0/45211",
+            "duration": "0.00% missing values: 0/45211",
+            "campaign": "0.00% missing values: 0/45211",
+            "pdays": "0.00% missing values: 0/45211",
+            "previous": "0.00% missing values: 0/45211",
+            "poutcome": "0.00% missing values: 0/45211",
+            "subscribed_deposit": "0.00% missing values: 0/45211",
+            "created_at": "0.00% missing values: 0/45211",
+            "updated_at": "0.00% missing values: 0/45211"
+        }
+    },
+    "customers": {
+        "basic_info": {
+            "num_rows": 1048567,
+            "num_columns": 5
+        },
+        "data_types": {
+            "CustomerID": "string",
+            "CustomerDOB": "string",
+            "CustGender": "string",
+            "CustLocation": "string",
+            "CustAccountBalance": "double"
+        },
+        "missing_values": {
+            "CustomerID": "0.00% missing values: 0/1048567",
+            "CustomerDOB": "0.00% missing values: 0/1048567",
+            "CustGender": "0.10% missing values: 1100/1048567",
+            "CustLocation": "0.01% missing values: 151/1048567",
+            "CustAccountBalance": "0.23% missing values: 2369/1048567"
+        }
+    },
+    "transactions": {
+        "basic_info": {
+            "num_rows": 1048567,
+            "num_columns": 5
+        },
+        "data_types": {
+            "TransactionID": "string",
+            "CustomerID": "string",
+            "TransactionDate": "string",
+            "TransactionTime": "int",
+            "TransactionAmount (INR)": "double"
+        },
+        "missing_values": {
+            "TransactionID": "0.00% missing values: 0/1048567",
+            "CustomerID": "0.00% missing values: 0/1048567",
+            "TransactionDate": "0.00% missing values: 0/1048567",
+            "TransactionTime": "0.00% missing values: 0/1048567",
+            "TransactionAmount (INR)": "0.00% missing values: 0/1048567"
+        }
+    }
+}
